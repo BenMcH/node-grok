@@ -1,0 +1,19 @@
+{
+  "name": "port-forward-server",
+  "version": "0.0.1",
+  "description": "A client-server application to create a public-facing server for development purposes without network configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon index.js"
+  },
+  "author": "Ben McHone",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  }
+}
