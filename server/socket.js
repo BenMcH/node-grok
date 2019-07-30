@@ -32,7 +32,6 @@ const listener = websocket => sock => {
   websocket.on(`${eventString}-${transId}`, data => sock.write(data));
 
   sock.on('data', data => {
-    // console.log(`DATA ${sock.remoteAddress}: ${data}`);
     // Write the data back to the socket, the client will receive it as data from the server
     websocket.emit(eventString, { data, transId });
   });
