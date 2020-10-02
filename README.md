@@ -15,4 +15,6 @@ transaction id is then managed on the client-side to make sure that all traffic 
 
 ## Usage
 
-_TODO: Document usage, make more versatile_
+The easiest way to run the server is by entering the server directory and running `docker-compose up -d` to run the application in the background. It will automatically bind to the ports 8888 and 20300-20399.
+
+To run the client, enter the client directory, install dependencies with `npm install` and run the following command `npm run start -- --server ${IP_OR_DOMAIN_FOR_YOUR_SERVER}:8888 --port ${LOCAL_PORT_FOR_FORWARDING}`
