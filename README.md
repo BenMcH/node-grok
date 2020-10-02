@@ -2,7 +2,7 @@
 
 This project's goal is to create a bridge between a secured network and the outside world in which TCP connections can be made, similar to ngrok.
 
-The original inspriation for the project was simply wanting a self-hosted version of ngrok so that personal data does not have to travel through an unknown server.
+The original inspiration for the project was simply wanting a self-hosted version of ngrok so that personal data does not have to travel through an unknown server.
 
 ## How it works
 
@@ -17,4 +17,4 @@ transaction id is then managed on the client-side to make sure that all traffic 
 
 The easiest way to run the server is by entering the server directory and running `docker-compose up -d` to run the application in the background. It will automatically bind to the ports 8888 and 20300-20399.
 
-To run the client, enter the client directory, install dependencies with `npm install` and run the following command `npm run start -- --server ${IP_OR_DOMAIN_FOR_YOUR_SERVER}:8888 --port ${LOCAL_PORT_FOR_FORWARDING}`
+To run the client, enter the client directory, install dependencies with `yarn install` and run the following command `yarn run start --server ${IP_OR_DOMAIN_FOR_YOUR_SERVER}:8888 --port ${LOCAL_PORT_FOR_FORWARDING}`

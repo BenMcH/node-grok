@@ -3,6 +3,6 @@ FROM node:12.18.4-alpine
 WORKDIR /app
 ADD . .
 
-RUN npm install
+RUN yarn install
 
-CMD npm run start
+CMD yarn start
