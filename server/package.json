@@ -9,11 +9,11 @@
   },
   "author": "Ben McHone",
   "license": "MIT",
-  "devDependencies": {
-    "nodemon": "^1.19.1"
-  },
   "dependencies": {
     "express": "^4.17.1",
     "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
