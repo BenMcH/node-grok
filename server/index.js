@@ -20,6 +20,5 @@ io.on('connection', function(socket) {
   });
 });
 
-io.listen(8888, function() {
-  console.log('listening on *:8888');
-});
+io.listen(8888);
+console.log('Listening on *:8888');

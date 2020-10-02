@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+    node-grok:
+        build: .
+        image: node-grok
+        container_name: node-grok
+        ports: 
+            - 8888:8888
+            - 20300-20399:20300-20399
