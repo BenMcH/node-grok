@@ -10,14 +10,14 @@ const port = argv.port || argv.p;
 const { server } = argv;
 
 if (port && server) {
-  const socket = socketio(server);
+  const socket = socketio(`ws://${server}`);
 
   socket.on('connect', () => {
     console.log(`Connected. Forwarding traffic to: localhost:${port}`);
   });
 
   socket.on('notice', data => {
-    const newData = data.replace(/\$SERVER/g, server.replace(/:\\D*/, ''));
+    const newData = data.replace(/\$SERVER/g, server.replace(/:\d*/, ''));
     console.log(newData);
   });
 
